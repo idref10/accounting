@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="float-left">Invoices</h5>
+    <div class="btn-group float-right" role="group" aria-label="Basic example">
+      <app-action
+        class="btn btn-primary"
+        [ngClass]="{'disabled' : loading }"
+        [actionType]="'invoices'"
+        [action]="'send'"
+        [buttonIcon]="'fa-envelope'"
+        (onLoadingActions)="setLoading($event)"
+        [loading]="loading"
+        [selectedValues]="selectedActionValues">
+      </app-action>
+      <app-action
+        class="btn btn-primary"
+        [ngClass]="{'disabled' : loading }"
+        [actionType]="'invoices'"
+        [action]="'delete'"
+        [buttonIcon]="'fa-trash-alt'"
+        (onLoadingActions)="setLoading($event)"
+        [loading]="loading"
+        [selectedValues]="selectedActionValues">
+      </app-action>
+    </div>
+  </div>
+  <div class="card-body">
+    <app-invoice-list (onSelectedActionValues)="setSelectedActionValues($event)" *ngIf="invoiceList$ | async as invoiceList" [invoiceList]="invoiceList"></app-invoice-list>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+#app {
+  width: 100%;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  width: 100%;
+
+  > .content {
+    padding: 20px;
+  }
+}

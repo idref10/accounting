@@ -1,0 +1,20 @@
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/* Main colours */
+$primary-color: #161931;
+$secondary-color: #f0f6ff;
+$black: #000000;
+$light-grey: #CCCCCC;
+$ligther-grey: #eaf3fde6;
+$white: #FFFFFF;
+$sea-blue: #788db4;
+$pink-lady: rgb(246, 74, 145);
+$purple-lilac: #736cc7;
+
+/* Derivations of Main Colours */
+$pink-lady-90: tint($pink-lady, 10%);
+$pink-lady-80: tint($pink-lady, 20%);
+$pink-lady-50: tint($pink-lady, 50%);
+$pink-lady-10: tint($pink-lady, 90%);

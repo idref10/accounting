@@ -1,0 +1,19 @@
+{
+  "expression": "\\/api\\/invoices\\/send",
+  "method": "POST",
+  "isArray": false,
+  "responses": {
+    "success": {
+      "default": true,
+      "status": 200,
+      "data": {
+        "message": "Send invoices successful"
+      },
+      "delay": 5000
+    },
+    "404": {
+      "status": 404,
+      "data": "Resource Not Found for Id Of type CustomerInfo.class"
+    }
+  }
+}

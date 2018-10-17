@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th width="120">Qty</th>
+    <th>Description</th>
+    <th width="140">Amount</th>
+    <th width="140">Tax</th>
+    <th width="140" class="text-right">Total Amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let invoiceLine of invoiceLines">
+    <td><input type="text" class="form-control" (input)="onInvoiceLineChange(invoiceLine)" [ngModel]="invoiceLine.getQty()" (ngModelChange)="invoiceLine.setQty($event)"></td>
+    <td><input type="text" class="form-control" (input)="onInvoiceLineChange(invoiceLine)" [ngModel]="invoiceLine.getDescription()" (ngModelChange)="invoiceLine.setDescription($event)"></td>
+    <td><input type="text" class="form-control" (input)="onInvoiceLineChange(invoiceLine)" [ngModel]="invoiceLine.getAmount()" (ngModelChange)="invoiceLine.setAmount($event)"></td>
+    <td>
+      <p-dropdown [options]="taxList" (onChange)="onInvoiceLineChange(invoiceLine)" [ngModel]="invoiceLine.getTaxId()" (ngModelChange)="invoiceLine.setTaxId($event)"></p-dropdown>
+    </td>
+    <td class="text-right">{{invoiceLine.getTotalAmount() | currency:'EUR'}}</td>
+  </tr>
+  </tbody>
+</table>
+

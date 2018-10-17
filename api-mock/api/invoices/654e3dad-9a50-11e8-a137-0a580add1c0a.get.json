@@ -1,0 +1,42 @@
+{
+  "expression": "\\/api\\/invoice\\/654e3dad-9a50-11e8-a137-0a580add1c0a",
+  "method": "GET",
+  "isArray": false,
+  "responses": {
+    "default": {
+      "default": true,
+      "status": 200,
+      "data": {
+        "id": "654e3dad-9a50-11e8-a137-0a580add1c0a",
+        "creationDate": "2018-08-07T14:43:16.961+0000",
+        "invoiceDate": "2018-09-07T14:43:16.961+0000",
+        "invoiceNumber": "2018-0061",
+        "totalAmount": "242.00",
+        "taxAmount": "42.00",
+        "amount": "200.00",
+        "invoiceLines": [
+          {
+            "id": "236e3dad-9a50-11e8-a137-0a580add1c0a",
+            "qty": "1.00",
+            "description": "Samsung Galaxy",
+            "amount": "200",
+            "taxAmount": "42.00",
+            "totalAmount": "242.00",
+            "taxId": "1",
+            "ledgerId": "1"
+          }
+        ],
+        "relation": {
+          "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+          "name": "Kees Kist",
+          "address": "Nachtijs 4",
+          "zip": "3245 VL",
+          "city": "Sommelsdijk"
+        }
+      },
+      "headers": {
+        "Content-type": "application/json"
+      }
+    }
+  }
+}

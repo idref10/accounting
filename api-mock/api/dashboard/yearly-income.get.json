@@ -1,0 +1,15 @@
+{
+  "expression": "\\/api\\/dashboard\\/profits\\/2018",
+  "method": "GET",
+  "isArray": false,
+  "responses": {
+    "default": {
+      "default": true,
+      "status": 200,
+      "data": [65, 59, 80, 81, 56, 55, 40],
+      "headers": {
+        "Content-type": "application/json"
+      }
+    }
+  }
+}

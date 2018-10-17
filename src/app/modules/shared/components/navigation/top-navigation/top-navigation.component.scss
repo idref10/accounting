@@ -1,0 +1,47 @@
+@import "~src/styles/base";
+
+.top-navigation {
+  display: flex;
+  flex-direction: row;
+  background: $white;
+  box-shadow: 0 1px 1px 1px rgba(18,106,211,.08);
+
+  .search-form {
+    .form-control {
+      border-radius: 50px;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $light-grey;
+        font-style: italic;
+      }
+    }
+  }
+
+  .nav-right {
+    margin: 0 0 0 auto;
+    padding: 0;
+    order: 2;
+    position: relative;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      width: 65px;
+      height: 65px;
+      text-align: center;
+
+      a {
+        padding: 0;
+      }
+
+      i {
+        line-height: 65px;
+        font-size: 20px;
+      }
+    }
+  }
+
+}

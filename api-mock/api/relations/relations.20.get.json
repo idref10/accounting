@@ -1,0 +1,114 @@
+{
+  "expression": "\\/api\\/relations\\?first=20",
+  "method": "GET",
+  "isArray": false,
+  "responses": {
+    "default": {
+      "default": true,
+      "status": 200,
+      "data": {
+        "relations": [
+          {
+            "id": "655e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "S.B.C. Management",
+            "address": "Patrijsstraat 13",
+            "zip": "3245 VK",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Koos Verweij",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Kees Kist",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Rinus Michels",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Edgar Davids",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Johan Cruijff",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Sjaak Swart",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Jari Litmanen",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Dennis Bergkamp",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          },
+          {
+            "id": "665e3dad-9a50-11e8-a137-0a580add1c0a",
+            "name": "Ruud Gullit",
+            "address": "Nachtijs 4",
+            "zip": "3245 VL",
+            "city": "Sommelsdijk",
+            "country": "NL",
+            "creationDate": "2018-08-07T14:43:16.961+0000"
+          }
+        ],
+        "metaData": {
+          "first": 0,
+          "numberOfRows": 10,
+          "totalNumberRows": 40
+        }
+      },
+      "delay": 1000,
+      "headers": {
+        "Content-type": "application/json"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "~src/styles/base";
+
+.sidebar {
+  height: 100%;
+  width: 255px;
+  background: $primary-color;
+
+  .nav {
+    li {
+      a {
+        color: $sea-blue;
+        border-radius: 0!important;
+        font-size: 13px;
+        font-weight: 300;
+        border-left: solid 3px transparent;
+        padding: 10px 15px 10px 20px;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.active {
+          color: $white;
+        }
+      }
+      i {
+        width: 15px;
+        margin-right: 8px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}

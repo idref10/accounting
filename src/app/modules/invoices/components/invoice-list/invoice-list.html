@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Invoice no.</th>
+      <th>Relation</th>
+      <th>Amount</th>
+      <th>Tax</th>
+      <th>Total amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let invoice of invoices" (click)="gotoInvoice(invoice)">
+      <td><p-checkbox name="groupname" value="{{invoice.getId()}}" (onChange)="onChangeCheckbox($event)" [(ngModel)]="selectedValues"></p-checkbox></td>
+      <td>{{invoice.getInvoiceNumber()}}</td>
+      <td>{{invoice.getRelation().getName()}}</td>
+      <td>{{invoice.getAmount()}}</td>
+      <td>{{invoice.getTaxAmount()}}</td>
+      <td>{{invoice.getTotalAmount()}}</td>
+    </tr>
+  </tbody>
+</table>

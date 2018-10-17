@@ -1,0 +1,25 @@
+{
+  "expression": "\\/api\\/relations\\/655e3dad-9a50-11e8-a137-0a580add1c0a",
+  "method": "GET",
+  "isArray": false,
+  "responses": {
+    "default": {
+      "default": true,
+      "status": 200,
+      "data": {
+        "relation": {
+          "id": "655e3dad-9a50-11e8-a137-0a580add1c0a",
+          "name": "S.B.C. Management",
+          "address": "Patrijsstraat 13",
+          "zip": "3245 VK",
+          "city": "Sommelsdijk",
+          "country": "NL",
+          "creationDate": "2018-08-07T14:43:16.961+0000"
+        }
+      },
+      "headers": {
+        "Content-type": "application/json"
+      }
+    }
+  }
+}

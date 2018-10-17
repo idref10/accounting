@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <h5 *ngIf="invoice">Edit Invoice {{invoice.getInvoiceNumber()}}</h5>
+  <div class="card mt-3">
+    <div class="row">
+      <div class="col m-4">
+        <app-relation-details *ngIf="invoice" [relation]="invoice.getRelation()"></app-relation-details>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <app-invoice-lines *ngIf="invoice && taxes" (onCalculateLineTotals)="setInvoiceTotals()" [invoiceLines]="invoice.getInvoiceLines()" [taxes]="taxes"></app-invoice-lines>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-4">
+          <div class="invoice-totals-column text-right">
+            <app-invoice-totals *ngIf="invoice" [invoiceTotals]="invoice.getInvoiceTotals()"></app-invoice-totals>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary mt-4" (click)="saveInvoice()">Save Invoice</button>
+</div>
